@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  become_user: root
+  become: yes
+  tasks:
+  - name: "Install packages"
+    pacman:
+      name:
+        - zsh
+        - yakuake
+      state: present

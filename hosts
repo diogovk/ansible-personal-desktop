@@ -1,0 +1,5 @@
+localhost hostname=gurenl ansible_user=vini ansible_connection=local
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python2
+
