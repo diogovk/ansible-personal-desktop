@@ -5,7 +5,150 @@
   tasks:
   - name: "Install packages"
     pacman:
-      name:
-        - zsh
-        - yakuake
       state: present
+      name:
+        - cdrdao
+        - cifs-utils
+        - diffutils
+        - dnsutils
+        - dvd+rw-tools
+        - elinks
+        - firefox
+        - chromium
+        - gettext
+        - gimp
+        - gvim
+        - mesa
+        - mesa-demos
+        - mesa-libgl
+        - nss
+        - opendesktop-fonts
+        - qt4
+        - x11vnc
+        - xorg-drivers
+        - xorg-server
+        - xorg-xhost
+        - xorg-xinit
+  - name: Install KDE
+    pacman:
+      state: present
+      name:
+        - k3b
+        - kdebase-kdepasswd
+        - gwenview
+        - kdebase-konqueror
+        - kdeconnect
+        - kdegraphics-okular
+        - kde-l10n-ja
+        - kde-l10n-pt_br
+        - kdemultimedia-kmix
+        - kdenetwork-filesharing
+        - kdenetwork-kget
+        - kdeutils-kdf
+        - kdeutils-kgpg
+        - kdiff3
+        - kiten
+        - konsole
+        - krb5
+        - ktorrent
+        - kwrite
+        - yakuake
+        - amarok
+        - dolphin
+        - ark
+  - name: Install audio programs
+    pacman:
+      state: present
+      name:
+        - pavucontrol
+        - mpg123
+        - lame
+        - pulseaudio-gconf
+        - alsa-utils
+        - gstreamer0.10-ffmpeg
+        - gstreamer0.10-good-plugins
+        - gstreamer0.10-ugly-plugins
+        - ffmpeg
+        - ffmpeg-compat
+  - name: Install video programs
+    pacman:
+      state: present
+      name:
+        - smplayer
+        - mplayer
+        - vlc
+  - name: Install compression programs
+    pacman:
+      state: present
+      name:
+        - lzo2
+        - zip
+        - unrar
+        - unzip
+        - p7zip
+        - xz
+  - name: Install base games
+    pacman:
+      state: present
+      name:
+        - jdk8-openjdk
+        - sed
+        - smbclient
+        - sudo
+        - grub
+        - os-prober
+        - ntp
+        - mlocate
+        - less
+        - lsof
+        - lvm2
+        - dialog
+        - bash-completion
+        - rsync
+        - rfkill
+        - python
+        - ttf-bitstream-vera
+        - openssh
+        - netctl
+        - openssl
+        - ttf-liberation
+        - wireless_tools
+        - wpa_supplicant
+        - iotop
+        - mkinitcpio
+        - pm-utils
+        - fuse
+        - mkinitcpio-busybox
+        - zsh
+        - zsh-completions
+  - name: Install games
+    pacman:
+      state: present
+      name:
+        - steam
+  - name: Install compilers and dev
+    pacman:
+      state: present
+      name:
+        - autoconf
+        - automake
+        - binutils
+        - dos2unix
+        - git
+        - gnupg
+        - curl
+        - gcc
+        - erlang
+        - expac
+        - m4
+        - make
+        - pkgfile
+        - postgresql
+        - mercurial
+        - fakeroot
+        - nodejs
+        - yajl
+        - npm
+        - lua
+        - ansible
+        - nano

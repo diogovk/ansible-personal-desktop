@@ -5,3 +5,9 @@
   tasks:
   - name: set the hostname for the machine
     hostname: name={{hostname}}
+  - name: enable multilib
+    blockinfile:
+      dest: /etc/pacman.conf
+      block: |
+        [multilib]
+        Include = /etc/pacman.d/mirrorlist
